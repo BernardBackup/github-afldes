@@ -3,8 +3,8 @@
  */
  import { trpc } from '../utils/trpc';
 //import Header from '../components/Header'
-import lambdablack from '../../assets/images/LAMBDA_black.svg';
-import lambdablabel from '../../assets/images/LAMBDA_label.svg';
+import lambdablack from '../assets/images/LAMBDA_black.svg';
+import lambdablabel from '../assets/images/LAMBDA_label.svg';
 
  export default function IndexPage() {
    // Define an array to store image components
