@@ -22,7 +22,7 @@ const appRouter = router({
           console.error(`Failed to fetch image ${imageNumber}:`, response.statusText);
         }
       } catch (error) {
-        console.error('Error fetching image:', error.message);
+        console.error('Error fetching image');
       }
 
       return {
