@@ -17,12 +17,12 @@ export default function Header() {
   {/*<img src={Logo} className=" w-[48px] h-[48px] " alt="Flowbite Logo" />*/}
               <span className="self-center f-f-sm text-tiny  whitespace-nowrap text-white ">Bernard Degens</span>
             </a>
-            <button onClick={openDrawer} data-collapse-toggle="navbar-default" type="button" className=" mr-3 inline-flex items-center  justify-center text-sm  md:hidden " aria-controls="navbar-default" aria-expanded="false">
+            {/*<button data-collapse-toggle="navbar-default" type="button" className=" mr-3 inline-flex items-center  justify-center text-sm  md:hidden " aria-controls="navbar-default" aria-expanded="false">
               <span className="sr-only">Open main menu</span>
               <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" viewBox="0 0 17 14">
                 <path stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
               </svg>
-            </button>
+            </button>*/}
             <div className="hidden w-full md:block md:w-auto" id="navbar-default">
               <ul className=" flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row space-x-8 lg:space-x-11 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent ">
                 <li>
