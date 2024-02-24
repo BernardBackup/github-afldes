@@ -37,10 +37,7 @@ body {
   font-family:Preahvihear-Regular;
   src: url("../assets/fontfamily/Preahvihear-Regular.ttf");
 }
-@font-face {
-  font-family:Bouncy;
-  src: url("../assets/fontfamily/Bouncy.otf");
-}
+
 
 .f-f-r{
   font-family:Poppins-Regular;
