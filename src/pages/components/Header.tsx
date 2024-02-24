@@ -5,26 +5,6 @@ export default function Header() {
   const [open, setOpen] = React.useState(false);
 
 
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-
-      // Adjust the threshold as needed
-      setShowSecondNavbar(scrollY > 1);
-
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    // Cleanup the event listener on component unmount
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  console.log(showSecondNavbar)
-
   return (
     <>
 
