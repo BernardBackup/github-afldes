@@ -2,6 +2,7 @@
  * This is a Next.js page.
  */
  import { trpc } from '../utils/trpc';
+import Header from '../components/Header'
 
  export default function IndexPage() {
    // Define an array to store image components
@@ -25,21 +26,14 @@
    }
  
    return (
+    <div> 
+     <Header/>
      <div className='bg-black'>
+      
        {/* Render all image components */}
        {imageComponents}
      </div>
+     </div>
    );
  }
- 
- const containerStyles = {
-   display: 'flex',
-   flexWrap: 'wrap',
-   justifyContent: 'center',
- };
- 
- const styles = {
-   margin: '10px',
-   textAlign: 'center',
- };
  
