@@ -99,11 +99,12 @@
    return (
     <div> 
      <Header/>
-     <div className='bg-black'>
+    {/* <div className='bg-black'>
       
-       {/* Render all image components */}
+        Render all image components 
        {imageComponents}
      </div>
+     */}
      </div>
    );
  }
