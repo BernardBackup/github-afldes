@@ -14,7 +14,7 @@
  
      // Push the image component to the array
      imageComponents.push(
-       <div key={i} style={styles}>
+       <div key={i} className='bg-black'>
          {result.data ? (
            <img src={result.data.image} alt={`Image ${i}`} />
          ) : (
@@ -25,7 +25,7 @@
    }
  
    return (
-     <div style={containerStyles}>
+     <div className='bg-black'>
        {/* Render all image components */}
        {imageComponents}
      </div>
