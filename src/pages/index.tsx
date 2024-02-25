@@ -79,16 +79,16 @@ import lambdablabel from '../assets/images/LAMBDA_label.svg';
                     <ul className=' inline-flex items-center ' >
                       <li>
                         Github
-                      </li>*/}
+                      </li>
                       <li className=' ml-3 ' >
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M5.25 12.75L12.75 5.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                           <path d="M5.25 5.25H12.75V12.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
 
-                      </li>
+                      </li>*/}
                     </ul>
-                  </a>*/}
+                  </a>
                 </li>
               </ul>
             </div>
