@@ -4,6 +4,7 @@
  import { trpc } from '../utils/trpc';
 //import Header from '../components/Header'
 import Image from 'next/image';
+import Slider from "react-slick";
 import lambdablack from '../assets/images/LAMBDA_black.svg';
 import lambdablabel from '../assets/images/LAMBDA_label.svg';
 
@@ -18,9 +19,9 @@ import lambdablabel from '../assets/images/LAMBDA_label.svg';
  
      // Push the image component to the array
      imageComponents.push(
-       <div key={i} className='bg-black'>
+       <div key={i} >
          {result.data ? (
-           <img src={result.data.image} alt={`Image ${i}`} />
+           <img src={result.data.image} alt={`Image ${i}`} className=' w-[90%] h-[162px] mx-auto  object-cover rounded-[24px] cursor-pointer ' />
          ) : (
            <h3>Loading image {i}...</h3>
          )}
@@ -98,7 +99,85 @@ import lambdablabel from '../assets/images/LAMBDA_label.svg';
     </>
   )
 }
- 
+ function SlideShow() {
+  const settings = {
+    // dots: false,
+    // arrows: false,
+    // infinite: true,
+    // speed: 500,
+    // slidesToShow: 8,
+    // slidesToScroll: 1,
+    // autoplay: true,
+    // speed: 2000,
+    // autoplaySpeed: 2000,
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 8,
+    slidesToScroll: 1,
+    autoplay: true, // Enable autoplay
+    speed: 2000,
+    autoplaySpeed: 2000, // Set autoplaySpeed to 0 for continuous scrolling
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1920,
+        settings: {
+          slidesToShow: 7,
+
+        }
+      },
+      {
+        breakpoint: 1511,
+        settings: {
+          slidesToShow: 6,
+
+        }
+      },
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 822,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 415,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+    ]
+  };
+ return (
+    <div className=' w-[90%] mx-auto sm:py-[96px] py-[64px] text-center ' >
+      <Slider {...settings} className=' my-12 ' >
+       {imageComponents}
+      </Slider>
+    </div>
    return (
     <div className=' relative'> 
      <Header/>
