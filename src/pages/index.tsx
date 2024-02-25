@@ -1,7 +1,7 @@
 /**
  * This is a Next.js page.
  */
- import { trpc } from '../utils/trpc';
+import { trpc } from '../utils/trpc';
 //import Header from '../components/Header'
 import Image from 'next/image';
 
@@ -27,15 +27,9 @@ export default function IndexPage() {
              className="w-full h-auto mx-auto object-cover rounded-2xl cursor-pointer"
            />
          ) : (
-                  <div key={i} className="mb-4 ">
-         {result.data ? (
-           <img
-             src={result.data.image}
-             alt={`Image ${i}`}
-             width={100}
-             height={100}
-             className="w-full h-auto mx-auto object-cover rounded-2xl cursor-pointer"
-           />
+          <div className="flex items-center justify-center h-screen">
+          <div className="loader ease-linear rounded-full border-8 border-t-8 border-orange-400 h-24 w-24"></div>
+        </div>
          )}
        </div>
     );
