@@ -74,7 +74,7 @@ export default function IndexPage() {
      <div className='w-[91%] xl:max-w-[1320px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-4'>
        {imageComponents}
      </div>
-     
+      {imageComponents}
      </div>
    );
  }
