@@ -27,7 +27,7 @@ export default function IndexPage() {
              className="w-full h-auto mx-auto object-cover rounded-2xl cursor-pointer"
            />
          ) : (
-          <div className="flex items-center justify-center h-screen">
+          <div className="mb-4 ">
           <div className="loader ease-linear rounded-full border-8 border-t-8 border-orange-400 h-24 w-24"></div>
         </div>
          )}
