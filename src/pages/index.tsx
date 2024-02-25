@@ -27,7 +27,15 @@ export default function IndexPage() {
              className="w-full h-auto mx-auto object-cover rounded-2xl cursor-pointer"
            />
          ) : (
-           <h3>Loading image {i}...</h3>
+                  <div key={i} className="mb-4 ">
+         {result.data ? (
+           <img
+             src={result.data.image}
+             alt={`Image ${i}`}
+             width={100}
+             height={100}
+             className="w-full h-auto mx-auto object-cover rounded-2xl cursor-pointer"
+           />
          )}
        </div>
     );
