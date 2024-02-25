@@ -102,6 +102,10 @@ import lambdablabel from '../assets/images/LAMBDA_label.svg';
    return (
     <div className=' relative'> 
      <Header/>
+      <div className=' w-[91%] xl:max-w-[1320px] mx-auto sm:my-[96px] my-[100px] text-center ' >
+      <h2 className=' f-f-r-b font-medium text-xl md:text-4xl text-primary  ' >
+       Lambda Protocol NFTs
+      </h2></div>
     {/* <div className='bg-black'>
       
         Render all image components 
