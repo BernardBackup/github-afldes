@@ -14,8 +14,7 @@ export default function IndexPage() {
   for (let i = 1; i <= 26; i++) {
     // Fetch each image
     const result = trpc.greeting.useQuery({ name: 'client', imageNumber: i });
-
-    // Push the image component to the array
+   // Push the image component to the array
    {/*imageComponents.push(
        <div key={i} className="mb-4 ">
          {result.data ? (
@@ -31,16 +30,16 @@ export default function IndexPage() {
          )}
        </div>
     );*/}
-     imageComponents.push(
-       <div key={i} className='bg-black'>
-         {result.data ? (
-           <img src={result.data.image} alt={`Image ${i}`} />
-         ) : (
-           <h3>Loading image {i}...</h3>
-         )}
-       </div>
-     );
-   }
+    imageComponents.push(
+      <div key={i} className='bg-black'>
+        {result.data ? (
+          <img src={result.data.image} alt={`Image ${i}`} />
+        ) : (
+          <h3>Loading image {i}...</h3>
+        )}
+      </div>
+    );
+  }
   }
    function Header() {
 
