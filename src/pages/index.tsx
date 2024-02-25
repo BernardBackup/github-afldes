@@ -37,11 +37,11 @@ import lambdablabel from '../assets/images/LAMBDA_label.svg';
       <div className=' w-[91%] 3xl:max-w-[1836px] mx-auto  mt-[27px] relative' >
 
 
-        <nav className={`  top-[27px] fixed  nav-bg-top w-[91%] 3xl:max-w-[1836px] z-[99] rounded-[60px] px-[16px] sm:px-2 md:px-8 mx-auto bg-green`}  >
+        <nav className={`  top-[27px] fixed  nav-bg-top w-[91%] 3xl:max-w-[1836px] z-[99] rounded-[60px] px-[16px] sm:px-2 md:px-8 mx-auto`}  >
           <div className="   flex flex-wrap items-center justify-between mx-auto py-3">
             <a href="" className="flex items-center space-x-3 rtl:space-x-reverse">
              <Image src="/LAMBDA_black.svg" width={50} height={50} alt="Flowbite Logo"  />
-             <Image src="/LAMBDA_label.svg" width={50} height={50} alt="Flowbite Logo"  />
+             <Image src="/LAMBDA_label.svg" width={150} height={100} alt="Flowbite Logo"  />
             </a>
             {/*<button data-collapse-toggle="navbar-default" type="button" className=" mr-3 inline-flex items-center  justify-center text-sm  md:hidden " aria-controls="navbar-default" aria-expanded="false">
               <span className="sr-only">Open main menu</span>
@@ -56,9 +56,9 @@ import lambdablabel from '../assets/images/LAMBDA_label.svg';
                 </li>
 
                 <li>
-                  <a href="#Community" className="block py-2 px-3 text-white f-f-m text-tiny rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 ">Telegram</a>
+                  <a href="#Community" className="block py-2 px-3 text-white f-f-m text-tiny rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 ">Discord</a>
                 </li>
-                <li>
+                {/*<li>
                   <a href="#Audit" className="block py-2 px-3 text-white f-f-m text-tiny rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 ">
                     <ul className=' inline-flex items-center ' >
                       <li>
@@ -74,12 +74,12 @@ import lambdablabel from '../assets/images/LAMBDA_label.svg';
                     </ul>
                   </a>
                 </li>
-                <li>
-                  <a href="https://github.com/BernardOnuh" className="block py-2 px-3 text-white f-f-m text-tiny rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 ">
+                {/*<li>
+                 <a href="https://github.com/BernardOnuh" className="block py-2 px-3 text-white f-f-m text-tiny rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 ">
                     <ul className=' inline-flex items-center ' >
                       <li>
                         Github
-                      </li>
+                      </li>*/}
                       <li className=' ml-3 ' >
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M5.25 12.75L12.75 5.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -88,7 +88,7 @@ import lambdablabel from '../assets/images/LAMBDA_label.svg';
 
                       </li>
                     </ul>
-                  </a>
+                  </a>*/}
                 </li>
               </ul>
             </div>
@@ -100,7 +100,7 @@ import lambdablabel from '../assets/images/LAMBDA_label.svg';
 }
  
    return (
-    <div> 
+    <div className="relative"> 
      <Header/>
     {/* <div className='bg-black'>
       
