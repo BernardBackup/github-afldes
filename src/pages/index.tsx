@@ -15,7 +15,8 @@ export default function IndexPage() {
     // Fetch each image
     const result = trpc.greeting.useQuery({ name: 'client', imageNumber: i });
    // Push the image component to the array
-   {/*imageComponents.push(
+  // Push the image component to the array
+    {/*imageComponents.push(
        <div key={i} className="mb-4 ">
          {result.data ? (
            <img
