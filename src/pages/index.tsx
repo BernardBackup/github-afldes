@@ -37,12 +37,11 @@ import lambdablabel from '../assets/images/LAMBDA_label.svg';
       <div className=' w-[91%] 3xl:max-w-[1836px] mx-auto  mt-[27px] relative' >
 
 
-        <nav className={`  top-[27px] fixed  nav-bg-top w-[91%] 3xl:max-w-[1836px] z-[99] rounded-[60px] px-[16px] sm:px-2 md:px-8 mx-auto `}  >
+        <nav className={`  top-[27px] fixed  nav-bg-top w-[91%] 3xl:max-w-[1836px] z-[99] rounded-[60px] px-[16px] sm:px-2 md:px-8 mx-auto bg-green`}  >
           <div className="   flex flex-wrap items-center justify-between mx-auto py-3">
             <a href="" className="flex items-center space-x-3 rtl:space-x-reverse">
              <Image src="/LAMBDA_black.svg" width={50} height={50} alt="Flowbite Logo"  />
-              <img src={lambdablack} className=" w-[48px] h-[48px] " alt="Flowbite Logo" />
-               <img src={lambdablabel} className=" w-[48px] h-[120px] " alt="Flowbite Logo" />
+             <Image src="/LAMBDA_label.svg" width={50} height={50} alt="Flowbite Logo"  />
             </a>
             {/*<button data-collapse-toggle="navbar-default" type="button" className=" mr-3 inline-flex items-center  justify-center text-sm  md:hidden " aria-controls="navbar-default" aria-expanded="false">
               <span className="sr-only">Open main menu</span>
