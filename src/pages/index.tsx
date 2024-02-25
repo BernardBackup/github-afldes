@@ -40,7 +40,7 @@ import lambdablabel from '../assets/images/LAMBDA_label.svg';
         <nav className={`  top-[27px] fixed  nav-bg-top w-[91%] 3xl:max-w-[1836px] z-[99] rounded-[60px] px-[16px] sm:px-2 md:px-8 mx-auto `}  >
           <div className="   flex flex-wrap items-center justify-between mx-auto py-3">
             <a href="" className="flex items-center space-x-3 rtl:space-x-reverse">
-             <Image src="../assets/images/LAMBDA_black.svg" width={50} height={50} />
+             <Image src="../assets/images/LAMBDA_black.svg" width={50} height={50} alt="Flowbite Logo"  />
               <img src={lambdablack} className=" w-[48px] h-[48px] " alt="Flowbite Logo" />
                <img src={lambdablabel} className=" w-[48px] h-[120px] " alt="Flowbite Logo" />
             </a>
