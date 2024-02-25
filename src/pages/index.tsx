@@ -86,10 +86,10 @@ import lambdablabel from '../assets/images/LAMBDA_label.svg';
                           <path d="M5.25 5.25H12.75V12.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
 
-                      </li>*/}
+                      </li>
                     </ul>
                   </a>
-                </li>
+                </li>*/}
               </ul>
             </div>
           </div>
