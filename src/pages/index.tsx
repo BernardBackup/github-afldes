@@ -4,10 +4,36 @@
 import { trpc } from '../utils/trpc';
 //import Header from '../components/Header'
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
 
 
 export default function IndexPage() {
   // Define an array to store image components
+  const [imageUrls, setImageUrls] = useState<string[]>([]); 
+
+  useEffect(() => {
+    async function fetchImages() {
+      const urls = [];
+
+      for (let imageNumber = 1; imageNumber <= 26; imageNumber++) {
+        try {
+          const response = await fetch(`https://query-server.fly.dev/query?contract=first-nft&function=tokenURI&args=[${imageNumber}]`);
+          const data = await response.json();
+          
+          const imageUrl = data.json; // Replace 'url' with the actual key containing the image URL
+          urls.push(imageUrl);
+        } catch (error) {
+          console.error(`Error fetching image ${imageNumber}:`, error);
+          urls.push(null); // or some default value indicating an error
+        }
+      }
+
+      setImageUrls(urls);
+    }
+
+    fetchImages();
+  }, []);
+
   const imageComponents = [];
 
   // Make requests for images 1 to 26
@@ -47,7 +73,8 @@ export default function IndexPage() {
             <a href="" className="flex items-center space-x-3 rtl:space-x-reverse">
              <Image src="/LAMBDA_black.svg" width={25} height={25} alt="Flowbite Logo"  />
              <Image src="/LAMBDA_label.svg" width={75} height={50} alt="Flowbite Logo"  />
-            </a>   
+            </a>
+            {imageUrls}
             <div className="hidden w-full md:block md:w-auto" id="navbar-default">
               <ul className=" flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row space-x-8 lg:space-x-11 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent ">
                 <li>
