@@ -11,7 +11,7 @@ export default function IndexPage() {
   const imageComponents = [];
 
   // Make requests for images 1 to 26
-  for (let i = 1; i <= 26; i++) {
+  for (let i = 1; i <= 4; i++) {
     // Fetch each image
     const result = trpc.greeting.useQuery({ name: 'client', imageNumber: i });
 
